@@ -28,6 +28,8 @@ jobs:
           theme: "dark"
       - name: add a nojekyll file
         run: touch $GITHUB_WORKSPACE/www/.nojekyll
+      - name: replace logo image
+        run: cp $GITHUB_WORKSPACE/logo.png $GITHUB_WORKSPACE/www/static/img/
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:

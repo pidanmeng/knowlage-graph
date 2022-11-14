@@ -13,12 +13,21 @@
  {:block/name "cancelled",
   :block/created-at 1668301615365,
   :block/updated-at 1668301615365}
+ {:block/name "card",
+  :block/created-at 1668414974262,
+  :block/updated-at 1668414974262}
+ {:block/name "contents",
+  :block/created-at 1668414974262,
+  :block/updated-at 1668414974262}
  {:block/name "doing",
   :block/created-at 1668301615365,
   :block/updated-at 1668301615365}
  {:block/name "done",
   :block/created-at 1668301615365,
   :block/updated-at 1668301615365}
+ {:block/name "favorites",
+  :block/created-at 1668414974262,
+  :block/updated-at 1668414974262}
  {:block/name "in-progress",
   :block/created-at 1668301615365,
   :block/updated-at 1668301615365}
