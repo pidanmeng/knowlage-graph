@@ -13,30 +13,24 @@
  {:block/name "cancelled",
   :block/created-at 1668301615365,
   :block/updated-at 1668301615365}
- {:block/name "card",
-  :block/created-at 1668412747456,
-  :block/updated-at 1668412747456}
- {:block/name "contents",
-  :block/created-at 1668412747456,
-  :block/updated-at 1668412747456}
  {:block/name "doing",
   :block/created-at 1668301615365,
   :block/updated-at 1668301615365}
  {:block/name "done",
   :block/created-at 1668301615365,
   :block/updated-at 1668301615365}
- {:block/name "favorites",
-  :block/created-at 1668412747456,
-  :block/updated-at 1668412747456}
  {:block/name "in-progress",
   :block/created-at 1668301615365,
   :block/updated-at 1668301615365}
  {:block/name "later",
   :block/created-at 1668301615365,
   :block/updated-at 1668301615365}
+ {:block/name "monorepo",
+  :block/created-at 1668412818244,
+  :block/updated-at 1668412868367}
  {:block/name "nov 14th, 2022",
   :block/created-at 1668410754274,
-  :block/updated-at 1668410754274}
+  :block/updated-at 1668412818244}
  {:block/name "now",
   :block/created-at 1668301615365,
   :block/updated-at 1668301615365}
