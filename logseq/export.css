@@ -11,3 +11,9 @@
 .genshin {
   font-family: Genshin;
 }
+
+.journals-nav,
+.flashcards-nav,
+.github-alert {
+  display: none;
+}
