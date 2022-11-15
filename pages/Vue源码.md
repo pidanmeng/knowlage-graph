@@ -1,1 +1,1 @@
-tags:: source code
+page-type:: [[source code]]
