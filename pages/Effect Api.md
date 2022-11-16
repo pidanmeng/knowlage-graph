@@ -4,7 +4,8 @@ tags:: Vue源码, api
 - {{renderer :tocgen}}
 - ## 响应式原理
 	- 核心代码：
-		- ```typescript
+		- 代理响应式对象
+		  ```typescript
 		  // 代理响应式对象
 		  
 		  function createReactiveObject(target: Target, baseHandler: ProxyHandler<any>) {
@@ -16,7 +17,8 @@ tags:: Vue源码, api
 		    return createReactiveObject(target, mutableHandlers);
 		  }
 		  ```
-		- ```typescript
+		- 收集依赖和触发依赖
+		  ```typescript
 		  function createGetter(isReadonly = false) {
 		    return function get (target: Target, key: string, receiver: Object) {
 		      const res = Reflect.get(target, key, receiver);
@@ -42,7 +44,8 @@ tags:: Vue源码, api
 		    set,
 		  }
 		  ```
-		- ```typescript
+		- 收集和触发依赖具体流程
+		  ```typescript
 		  class ReactiveEffect<T = any> {
 		    deps: Dep[] = []
 		    constructor(public fn: () => T) {
