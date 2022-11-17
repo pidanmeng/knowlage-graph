@@ -25,21 +25,21 @@ page-type:: [[api]]
 - 解决方法是设置一个`shouldTrack`的全局标志，执行依赖后将标志置为false，若标志处于false则在响应式对象触发get方法时跳过依赖收集
 	- commit diff：[https://github.com/pidanmeng/mini-vue/commit/68a39345c0e0fde674fd07fd1169741929a96682](https://github.com/pidanmeng/mini-vue/commit/68a39345c0e0fde674fd07fd1169741929a96682)
 - ## #A
-- Question：以下代码也能通过测试case：
-	- ```typescript
-	  run() {
-	    try {
-	      activeEffect = this;
-	      shouldTrack = true;
-	    } catch (e) {
-	      console.warn(e);
-	    }
-	    const result = this.fn();
-	    // 把activeEffect置为空
-	    activeEffect = undefined;
-	    return result;
-	  }
-	  ```
-	- 为什么不用activeEffect = undefined呢？
-- Answer：
-	- 一个`Effect`可能被多个响应式对象依赖，如果这样处理会导致只有第一个被触发`get`方法的响应式对象成功收集依赖，其他响应式对象依赖收集失败的bug
+	- Question：以下代码也能通过测试case：
+		- ```typescript
+		  run() {
+		    try {
+		      activeEffect = this;
+		      shouldTrack = true;
+		    } catch (e) {
+		      console.warn(e);
+		    }
+		    const result = this.fn();
+		    // 把activeEffect置为空
+		    activeEffect = undefined;
+		    return result;
+		  }
+		  ```
+		- 为什么不用activeEffect = undefined呢？
+	- Answer：
+		- 一个`Effect`可能被多个响应式对象依赖，如果这样处理会导致只有第一个被触发`get`方法的响应式对象成功收集依赖，其他响应式对象依赖收集失败的bug
