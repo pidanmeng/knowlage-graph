@@ -16,3 +16,8 @@
 .github-alert {
   display: none;
 }
+
+.custom-query-title.flex.justify-between.w-full {
+  background: none;
+  color: var(--color-blue-200);
+}
