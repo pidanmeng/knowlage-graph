@@ -41,7 +41,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Async Github Branch To Gitee
-          uses: shanghaobo/github-branch-gitee@master
+          uses: shanghaobo/github-branch-gitee@v1.0.0
           with:
             github_repo: pidanmeng/knowledge-graph
             github_branch: gh-pages
