@@ -24,8 +24,8 @@ jobs:
       - name: Logseq Publish 🚩
         uses: pengx17/logseq-publish@main
         with:
-          version: "master"
-          theme: "dark"
+          version: 'master'
+          theme: 'dark'
       - name: add a nojekyll file
         run: touch $GITHUB_WORKSPACE/www/.nojekyll
       - name: replace logo image
@@ -40,12 +40,13 @@ jobs:
   sync_gitee_pages:
     runs-on: ubuntu-latest
     steps:
-    - name: Mirror the Github organization repos to Gitee.
-      uses: Yikun/hub-mirror-action@master
-      with:
-        src: github/pidanmeng
-        dst: gitee/pidanMoe
-        dst_key: ${{ secrets.GITEE_KEY }}
-        dst_token: ${{ secrets.GITEE_TOKEN }}
-        static_list: "knowledge-graph"
+      - name: Async Github Branch To Gitee
+          uses: shanghaobo/github-branch-gitee@master
+          with:
+            github_repo: pidanmeng/knowledge-graph
+            github_branch: gh-pages
+            gitee_repo: pidanmeng/knowledge-graph
+            gitee_branch: gh-pages
+            username: ${{ secrets.GITEE_USERNAME }}
+            password: ${{ secrets.GITEE_PASSWORD }}
     needs: [build]
