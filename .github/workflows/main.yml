@@ -37,3 +37,13 @@ jobs:
           folder: www # The folder the action should deploy.
           clean: true
           single-commit: true
+    sync_to_gitee:
+      steps:
+      - name: Mirror the Github organization repos to Gitee.
+        uses: Yikun/hub-mirror-action@master
+        with:
+          src: github/pidanmeng
+          dst: gitee/pidanMoe
+          dst_key: ${{ secrets.GITEE_KEY }}
+          dst_token: ${{ secrets.GITEE_TOKEN }}
+      needs: [build]
