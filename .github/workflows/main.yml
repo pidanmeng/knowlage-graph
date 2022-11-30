@@ -41,7 +41,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Async Github Branch To Gitee
-        uses: pidanmeng/force-sync-gitee-action@master
+        uses: pidanmeng/force-sync-gitee-action@v0.0.2
         with:
           username: ${{ secrets.GITEE_USERNAME }}
           password: ${{ secrets.GITEE_PASSWORD }}
