@@ -45,4 +45,4 @@ jobs:
         with:
           username: ${{ secrets.GITEE_USERNAME }}
           password: ${{ secrets.GITEE_PASSWORD }}
-    needs: [build]
+    # needs: [build]
