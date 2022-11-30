@@ -41,12 +41,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Async Github Branch To Gitee
-        uses: shanghaobo/github-branch-gitee@v1.0.0
+        uses: pidanmeng/force-sync-gitee-action
         with:
-          github_repo: pidanmeng/knowledge-graph
-          github_branch: gh-pages
-          gitee_repo: pidanmeng/knowledge-graph
-          gitee_branch: gh-pages
           username: ${{ secrets.GITEE_USERNAME }}
           password: ${{ secrets.GITEE_PASSWORD }}
     needs: [build]
