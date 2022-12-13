@@ -1,5 +1,6 @@
-page-type:: [[source code]] 
+page-type:: [[source code]]
 tags:: source code, doki-theme, VSC插件
+id:: 638cac41-8d85-4105-b67f-1718801f4f78
 
 - 工作原理和核心代码：
 	- 修改VSCode的本地CSS
