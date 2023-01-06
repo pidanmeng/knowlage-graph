@@ -7,9 +7,12 @@ page-type:: #[[project]]
 	- 小说/漫画/电影等组件插件化
 	- 后端爬虫插件化
 - i18n
+- unocss
+- Electron 无边框窗口拖动
+- QianKun
+	- 子应用keep-alive
 - ---
 - 侧边栏
-	- keep-alive
 	- GitHub登录
 	- 搜索
 	- 收藏
