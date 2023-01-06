@@ -9,6 +9,7 @@ page-type:: #[[project]]
 - i18n
 - ---
 - 侧边栏
+	- keep-alive
 	- GitHub登录
 	- 搜索
 	- 收藏
