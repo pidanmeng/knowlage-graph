@@ -12,6 +12,35 @@ page-type:: #[[project]]
 	- 爬虫插件化
 		- 小说/漫画/电影等组件插件化
 		- 后端爬虫插件化
+- 微前端
+	- `@infoism/main` - 主应用初始化
+		- 流程
+			- 主应用挂载infoism对象
+			- 注册生命周期
+			- 注册api
+		- 接口
+			- registerMainapp
+			- infoism.registerHook
+				- enter
+				- leave
+			-
+	- `@infoism/core` - 微应用初始化
+		- 流程
+			- 注册信息到infoism对象
+			- 暴露生命周期给微应用
+			- 暴露主应用的api
+			- 注册api给其他插件使用
+			- 暴露其他应用的api
+		- 接口
+			- registerMicroapp(name, getConfig)
+			- infoism.on
+				- enter
+				- leave
+			- infoism.api
+				- showDialog
+				- ...
+			- infoism.registerApi(name, callback)
+			- infoism.call(namespace, name, ...args)
 - ---
 - 侧边栏
 	- GitHub登录
