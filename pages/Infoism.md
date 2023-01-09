@@ -23,7 +23,7 @@ page-type:: #[[project]]
 			- infoism.registerHook
 				- enter
 				- leave
-			-
+			- infoism.registerApi
 	- `@infoism/core` - 微应用初始化
 		- 流程
 			- 注册信息到infoism对象
