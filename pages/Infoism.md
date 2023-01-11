@@ -19,7 +19,7 @@ page-type:: #[[project]]
 			- 注册生命周期
 			- 注册api
 		- 接口
-			- registerMainapp
+			- loadMicroApp
 			- infoism.registerHook
 				- enter
 				- leave
