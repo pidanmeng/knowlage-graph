@@ -32,15 +32,26 @@ page-type:: #[[project]]
 			- 注册api给其他插件使用
 			- 暴露其他应用的api
 		- 接口
-			- registerMicroapp(name, getConfig)
-			- infoism.on
-				- enter
-				- leave
+			- registerMicroapp(appName, getConfig)
 			- infoism.api
-				- showDialog
-				- ...
-			- infoism.registerApi(name, callback)
-			- infoism.call(namespace, name, ...args)
+				- window
+					- close
+					- minimize
+					- maximize
+					- unmaximize
+					- on
+						- close
+						- minimize
+						- maximize
+						- unmaximize
+				- mainApp
+					- setTitlebar
+					- on
+						- active
+						- leave
+			- infoism.status
+				- windowMaximize: boolean
+				- activeApp: string
 - ---
 - 侧边栏
 	- GitHub登录
